@@ -15,7 +15,15 @@ while (contador <= 10){
         console.log("Número inválido. Você deve digitar um número entre 0 e 10."); 
     }   
 } */ 
-let frutas = ["banana", "maçã", "laranja", "uva", "abacaxi"];
+
+/* let frutas = ["banana", "maçã", "laranja", "uva", "abacaxi"];
 for (let i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
+} */
+
+let notas = [7,8,9,10,6,12,16,18,20];
+let soma = 0;
+for (let i = 0; i < notas.length; i++) {
+    soma += notas[i];
 }
+console.log("A soma das notas é: " + soma);
