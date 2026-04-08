@@ -1,5 +1,6 @@
 //npm install readline-sync
-let contador=0;
+
+/* let contador=0;
 let numero;
 const r = require('readline-sync');
 while (contador <= 10){
@@ -13,4 +14,8 @@ while (contador <= 10){
     else {
         console.log("Número inválido. Você deve digitar um número entre 0 e 10."); 
     }   
+} */ 
+let frutas = ["banana", "maçã", "laranja", "uva", "abacaxi"];
+for (let i = 0; i < frutas.length; i++) {
+    console.log(frutas[i]);
 }
