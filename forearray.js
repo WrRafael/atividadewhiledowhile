@@ -21,9 +21,35 @@ for (let i = 0; i < frutas.length; i++) {
     console.log(frutas[i]);
 } */
 
-let notas = [7,8,9,10,6,12,16,18,20];
+/* let notas = [7,8,9,10,6,12,16,18,20];
 let soma = 0;
 for (let i = 0; i < notas.length; i++) {
     soma += notas[i];
 }
-console.log("A soma das notas é: " + soma);
+console.log("A soma das notas é: " + soma); */
+
+/* function saudacao(){
+   console.log("Olá, seja bem-vindo!");
+}
+saudacao(); */
+let soma=0;
+let nota;
+let contador = 1;
+    
+const r = require('readline-sync');
+function mostrarMedia(){
+
+while (contador <= 5){
+    nota = parseFloat(r.question('Digite a nota ' + contador + ': '));
+    if (nota >= 0 && nota <= 10) {
+    soma += nota;
+    contador++;    
+    }else {
+        console.log("Nota inválida. Digite outra nota.");
+    }
+}
+let media = soma / 5;
+console.log("A média das notas é: " + media);
+}
+
+mostrarMedia();
